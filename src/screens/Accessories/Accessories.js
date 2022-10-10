@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from '../../navigation/Webpagenav';
 
-export default function landingpage() {
+export default function Accessories() {
   return (
     <>
       <Navbar />
-      <h1>Home</h1>
+      Accessories
     </>
   )
 }

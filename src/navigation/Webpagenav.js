@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BsFillCartFill, BsFillHeartFill } from "react-icons/bs";
 import { GoPerson } from "react-icons/go";
-//import "../styles/navbar.css";
+import "./Webpagenav.css";
 //import Logo from './images/logo.jpg'
 
 export default function Webpagenav() {

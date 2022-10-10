@@ -5,7 +5,7 @@ export default function landingpage() {
   return (
     <>
       <Navbar />
-      Home
+      <h1>Home</h1>
     </>
   )
 }

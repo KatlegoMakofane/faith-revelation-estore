@@ -36,11 +36,11 @@ const Footer = () => {
                 <div className="links">
                     <h1>Contact us Directly:</h1>
                     <div >
-                        <span><FiPhoneCall size={20}/></span>
+                        <span><FiPhoneCall/></span>
                         <a href="tel:+27101091750">(010)109 1750</a>
                     </div>
                     <div>
-                        <span><HiOutlineMailOpen size={20}/></span>
+                        <span><HiOutlineMailOpen/></span>
                         <a href="lebo@faithrevelation.co.za">lebo@faithrevelation.co.za</a>
                     </div>
                 </div>
@@ -49,10 +49,10 @@ const Footer = () => {
                     <div className="profile">
                         <h1>Check our Profiles:</h1>
                         <div className="icons">
-                            <span><a href="#github"><AiFillGithub size={20}/></a></span>
-                            <span><a href="#fb"><BsFacebook size={20}/></a></span>
-                            <span><a href="#slack"><BsSlack size={20}/></a></span>
-                            <span><a href="#linkedIn"><AiFillLinkedin size={20}/></a></span>
+                            <span><a href="#github"><AiFillGithub/></a></span>
+                            <span><a href="#fb"><BsFacebook/></a></span>
+                            <span><a href="#slack"><BsSlack/></a></span>
+                            <span><a href="#linkedIn"><AiFillLinkedin/></a></span>
                         </div>
                     </div>
                     </Slide>
@@ -137,7 +137,7 @@ const Profile = styled.div`
         }
         p{
             width: 60%;
-            font-size: 1.7rem;
+            
             padding-top: 1.5rem;
             @media(max-width : 650px){
                 width: 100%;
@@ -156,8 +156,6 @@ const Profile = styled.div`
             a{
                 text-decoration: none;
                 color: lightgray;
-                font-size: 1.7rem;
-                
             }
         }
     }
@@ -169,14 +167,13 @@ const Profile = styled.div`
         .icons{
             display: flex;
             align-items: center;
-            
             span{
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 background-color: black;
-                width: 3rem;
-                height: 3rem;
+                width: 2rem;
+                height: 2rem;
                 margin-right: 0.5rem ;
                 border-radius: 50px;
                 a{
@@ -229,9 +226,9 @@ const Form = styled.div`
             background-color: #F8AFA6;
             border: none;
             border-radius: 5px;
-            filter: drop-shadow(0px 4px 5px #F79489);
+            filter: drop-shadow(0px 4px 5px #01be9551);
             :hover{
-                filter: drop-shadow(0px 6px 9px #F79489);
+                filter: drop-shadow(0px 6px 9px #01be9551);
             }
         }
     }

@@ -169,14 +169,15 @@ const Profile = styled.div`
         .icons{
             display: flex;
             align-items: center;
-            
+           
+            hrem;
             span{
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 background-color: black;
-                width: 3rem;
-                height: 3rem;
+                width: 2rem;
+                height: 2rem;
                 margin-right: 0.5rem ;
                 border-radius: 50px;
                 a{
@@ -229,9 +230,9 @@ const Form = styled.div`
             background-color: #F8AFA6;
             border: none;
             border-radius: 5px;
-            filter: drop-shadow(0px 4px 5px #F79489);
+            filter: drop-shadow(0px 4px 5px #01be9551);
             :hover{
-                filter: drop-shadow(0px 6px 9px #F79489);
+                filter: drop-shadow(0px 6px 9px #01be9551);
             }
         }
     }

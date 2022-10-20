@@ -36,11 +36,11 @@ const Footer = () => {
                 <div className="links">
                     <h1>Contact us Directly:</h1>
                     <div >
-                        <span><FiPhoneCall size={20}/></span>
+                        <span><FiPhoneCall/></span>
                         <a href="tel:+27101091750">(010)109 1750</a>
                     </div>
                     <div>
-                        <span><HiOutlineMailOpen size={20}/></span>
+                        <span><HiOutlineMailOpen/></span>
                         <a href="lebo@faithrevelation.co.za">lebo@faithrevelation.co.za</a>
                     </div>
                 </div>
@@ -49,10 +49,10 @@ const Footer = () => {
                     <div className="profile">
                         <h1>Check our Profiles:</h1>
                         <div className="icons">
-                            <span><a href="#github"><AiFillGithub size={20}/></a></span>
-                            <span><a href="#fb"><BsFacebook size={20}/></a></span>
-                            <span><a href="#slack"><BsSlack size={20}/></a></span>
-                            <span><a href="#linkedIn"><AiFillLinkedin size={20}/></a></span>
+                            <span><a href="#github"><AiFillGithub/></a></span>
+                            <span><a href="#fb"><BsFacebook/></a></span>
+                            <span><a href="#slack"><BsSlack/></a></span>
+                            <span><a href="#linkedIn"><AiFillLinkedin/></a></span>
                         </div>
                     </div>
                     </Slide>
@@ -137,8 +137,7 @@ const Profile = styled.div`
         }
         p{
             width: 60%;
-            font-size: 1.7rem;
-            padding-top: 1.5rem;
+            padding-top: 0.5rem;
             @media(max-width : 650px){
                 width: 100%;
             }
@@ -146,7 +145,7 @@ const Profile = styled.div`
     }
     .links{
         h1{
-            font-size: 2.2rem;
+            font-size: 1.2rem;
             margin-bottom: 0.5rem;
         }
         div{
@@ -156,27 +155,24 @@ const Profile = styled.div`
             a{
                 text-decoration: none;
                 color: lightgray;
-                font-size: 1.7rem;
-                
             }
         }
     }
     .profile{
         h1{
-            font-size: 2.2rem;
+            font-size: 1.2rem;
             padding: 1rem 0 ;
         }
         .icons{
             display: flex;
             align-items: center;
-            
             span{
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 background-color: black;
-                width: 3rem;
-                height: 3rem;
+                width: 2rem;
+                height: 2rem;
                 margin-right: 0.5rem ;
                 border-radius: 50px;
                 a{
@@ -190,7 +186,7 @@ const Profile = styled.div`
 const Form = styled.div`
     flex: 1;
     h1{
-        font-size: 2.3rem;
+        font-size: 1.3rem;
         padding-bottom: 0.7rem;
     }
     form {
@@ -224,28 +220,28 @@ const Form = styled.div`
         }
         button{
             width: 5rem;
-            height: 2.8rem;
+            height: 1.8rem;
             cursor: pointer;
             background-color: #F8AFA6;
             border: none;
             border-radius: 5px;
-            filter: drop-shadow(0px 4px 5px #F79489);
+            filter: drop-shadow(0px 4px 5px #01be9551);
             :hover{
-                filter: drop-shadow(0px 6px 9px #F79489);
+                filter: drop-shadow(0px 6px 9px #01be9551);
             }
         }
     }
 `
 const ArrowUp = styled.div`
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     background-color: #F8AFA6;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     font-weight: 700;
-    font-size: 2.3rem;
+    font-size: 1.3rem;
     position: absolute;
     bottom: 3rem;
     @media(max-width: 650px){

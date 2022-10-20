@@ -54,7 +54,7 @@ const Texts = styled.div`
         font-size: 3.3rem;
     }
     h1{
-        font-size: 5.3rem;
+        font-size: 2.3rem;
         font-family: 'Secular One', sans-serif;
         letter-spacing: 2px;
         color: #F8AFA6;

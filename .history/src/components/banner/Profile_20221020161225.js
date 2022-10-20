@@ -9,7 +9,7 @@ const ProfileComp = () =>{
     <Content>
         <Fade left>
             <Texts>
-                <h4>Hello <span className='#F8AFA6' >We are</span></h4>
+                <h3>Hello <span className='#F8AFA6' >We are</span></h3>
                 <h1 className='#F8AFA6'>Revelation</h1>
                 <button>Browse For More</button>
                 <Social>
@@ -51,10 +51,9 @@ const Texts = styled.div`
     h4{
         padding: 1.5rem 0;
         font-weight: 500;
-        font-size: 3.3rem;
     }
     h1{
-        font-size: 5.3rem;
+        font-size: 2.3rem;
         font-family: 'Secular One', sans-serif;
         letter-spacing: 2px;
         color: #F8AFA6;

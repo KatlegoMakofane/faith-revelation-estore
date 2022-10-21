@@ -9,7 +9,7 @@ import { SalesCard } from './SalesCard';
 
 
 
-const Sales = () => {
+function Sales() {
   return (
     <>
 
@@ -33,6 +33,11 @@ const Sales = () => {
     <Footer/>
 </Container>
 
+       <Banner>
+        <Header/>
+    </Banner>
+    <h1>Sale</h1>
+      
 
     </>
   )
@@ -40,10 +45,16 @@ const Sales = () => {
 
 export default Sales;
 
+
+
 const Container = styled.div`
 `
 const Banner = styled.div`
   background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
 `
 
+
+const Banner = styled.div`
+  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+`
 

@@ -105,7 +105,7 @@ function Disclaimerpage () {
 
   )
 }
-}
+
 // export default about;
 
 // const Container = styled.div`

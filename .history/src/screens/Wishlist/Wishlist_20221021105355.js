@@ -32,4 +32,15 @@ const Banner = styled.div`
 `
 
 
-     
+     <Banner>
+        <Header/>
+    </Banner>
+      <h1>Wishlist page</h1>
+      
+    </>
+  )
+}
+const Banner = styled.div`
+  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+`
+

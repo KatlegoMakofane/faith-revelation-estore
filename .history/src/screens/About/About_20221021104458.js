@@ -11,16 +11,6 @@ import './Aboutnav.css';
 export default function About() {
   
   const navigate = useNavigate();
-
-
-const about = () => {
-  // return (
-  //   <Container>
-  //   <Banner>
-  //       <Header/>
-  //   </Banner>
-   
-
   const About = () => {
     navigate('/');
   };
@@ -35,7 +25,17 @@ const about = () => {
 
   const Faqs = () => {
     navigate('/faqs');
-  };
+  }
+
+const about = () => {
+  return (
+    <Container>
+    <Banner>
+        <Header/>
+    </Banner>
+   
+
+ 
   
     return (
       <div>
@@ -54,7 +54,7 @@ const about = () => {
         </div>
 
     )
-};
+
 
 
 function Aboutpage () {
@@ -81,8 +81,8 @@ function Aboutpage () {
         </div>
       </div>
 
-      {/* <Footer/>
-</Container> */}
+      <Footer/>
+</Container>
 
     </>
     
@@ -105,11 +105,11 @@ function Disclaimerpage () {
 
   )
 }
-}
-// export default about;
 
-// const Container = styled.div`
-// `
-// const Banner = styled.div`
-//   background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
-// `
+export default about;
+
+const Container = styled.div`
+`
+const Banner = styled.div`
+  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+`

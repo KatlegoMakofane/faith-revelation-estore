@@ -1,27 +1,32 @@
-import React from 'react';
 
+import React from 'react';
 import Footer from '../../components/Footer/Footer';
 import styled from 'styled-components';
 import Header from '../../components/banner/Header';
-import Sdata from './Sdata';
-import { SalesCard } from './SalesCard';
+import Wdata from './Wdata';
+import { WinterCard } from './WinterCard';
+
+import React from 'react'
+import Header from '../../components/banner/Header';
+import styled from 'styled-components';
 
 
 
-
-const Sales = () => {
+const Winter = () => {
   return (
     <>
 
-      <Container>
+    <Container>
     <Banner>
         <Header/>
     </Banner>
-    <h1>Sale</h1>
+    <h1>
+            Winter
+        </h1>
     <div >
        
-    {Sdata.map(data => (
-            <SalesCard 
+    {Wdata.map(data => (
+            <WinterCard 
             key={data.id}
             image={data.image}
                         name={data.name}
@@ -33,12 +38,14 @@ const Sales = () => {
     <Footer/>
 </Container>
 
-
+     
     </>
   )
 }
 
-export default Sales;
+
+export default Winter;
+
 
 const Container = styled.div`
 `
@@ -46,4 +53,9 @@ const Banner = styled.div`
   background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
 `
 
+
+
+const Banner = styled.div`
+  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+`
 

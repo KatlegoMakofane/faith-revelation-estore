@@ -26,7 +26,7 @@ const about = () => {
   };
 
   const Disclaimer = () => {
-    navigate('/disclaimer');
+    navigate('/disclaimerpage');
   };
 
   const Terms = () => {

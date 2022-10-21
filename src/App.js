@@ -1,4 +1,4 @@
-import Home from './screens/Landingpage/Landingpage';
+import Home from './screens/Orderstatus/Orderstatus';
 
 
 function App() {

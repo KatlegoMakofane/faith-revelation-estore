@@ -1,10 +1,25 @@
 import React from 'react';
+
+import Footer from '../../components/Footer/Footer';
+import styled from 'styled-components';
+import Header from '../../components/banner/Header';
+
 import {Routes, Route, useNavigate} from 'react-router-dom';
 import './Aboutnav.css';
+
 
 export default function About() {
   
   const navigate = useNavigate();
+
+
+const about = () => {
+  return (
+    <Container>
+    <Banner>
+        <Header/>
+    </Banner>
+   
 
   const About = () => {
     navigate('/');
@@ -45,6 +60,7 @@ export default function About() {
 function Aboutpage () {
   return (
     <>
+
     <div className="Staticpages">
         <h1 className='Heading'>About Revelation</h1>
         <div className='Info-section'>
@@ -64,6 +80,10 @@ function Aboutpage () {
           </p>
         </div>
       </div>
+
+      <Footer/>
+</Container>
+
     </>
     
   )
@@ -82,5 +102,14 @@ function Disclaimerpage () {
           <p className='ans'>Unless otherwise stated, Faith Revelations and/or it's licensors own the intellectual property rights for all material on Faith Revelations. All intellectual property rights are reserved. You may view and/or print pages from https://faithrevelations.co.za for your own personal use subject to restrictions set in these terms and conditions.</p>
         </div>
       </div>
+
   )
 }
+
+export default about;
+
+const Container = styled.div`
+`
+const Banner = styled.div`
+  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+`

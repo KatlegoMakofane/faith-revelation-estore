@@ -7,6 +7,8 @@ import {Routes, Route, useNavigate} from 'react-router-dom';
 import Footer from '../../components/Footer/Footer';
 import styled from 'styled-components';
 import Header from '../../components/banner/Header';
+import { Link } from 'react-router-dom';
+
 
 
 const Profile = () => {
@@ -43,8 +45,10 @@ const Profile = () => {
 	<Container>
     <Banner>
         <Header/>
+		
     </Banner>
-			<h1>My Profile</h1>
+	
+			<h1 className='h1'>My Profile</h1>
 			<div className='profile'>
 				<div className='image-card'>
 					<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" />
@@ -53,9 +57,16 @@ const Profile = () => {
 				</div>
 				<div className='button-card'>
 					<div>
+
+					<button className='btn'>Account Details <AiOutlineArrowRight /></button>
+					<button className='btn'>Pending Orders <AiOutlineArrowRight /></button>
+					<button className='btn'>Order History <AiOutlineArrowRight /></button>
+					
+
 					<button className='btn' onClick={AccountDetails}>Account Details <AiOutlineArrowRight /></button>
 					<button className='btn'onClick={PendingOrders}>Pending Orders <AiOutlineArrowRight /></button>
 					<button className='btn'onClick={OrderHistory}>Order History <AiOutlineArrowRight /></button>
+
 					</div>
 					<div className='btn-btm'>
 					<button className='btn-sec'onClick={Cart}>Cart <BsFillCartFill size={45} className='icon' /></button>

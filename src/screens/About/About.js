@@ -11,7 +11,7 @@ export default function About() {
   };
 
   const Disclaimer = () => {
-    navigate('/disclaimer');
+    navigate('/disclaimerpage');
   };
 
   const Terms = () => {

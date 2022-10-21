@@ -1,11 +1,11 @@
-import Home from './screens/Orderstatus/Orderstatus';
-
+import Home from './screens/Landingpage/Landingpage';
+import Nav from './Nav/Nav'
 
 function App() {
   return (
 
     <>
-      <Home />
+      <Nav/>
     </>
 
   );

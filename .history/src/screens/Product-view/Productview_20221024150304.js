@@ -28,7 +28,6 @@ const productview = () => {
                 <TbBackspace size={50}/>
             </Link>
             <h1 className='heading'>Product View</h1>
-            <hr className='line'></hr>
             <br></br>
             <div className='image'>
             <img src={"https://massdrop-s3.imgix.net/product-images/massdrop-x-sennheiser-hd-58x-jubilee-headphones/FP/jbCgVcPdRXZC1YRI2oZ3_3qKeFvWGRbQ3wreRhIVc_58x_clear.png?auto=format&fm=jpg&fit=fill&w=300&h=300&bg=f0f0f0&fill=solid&fill-color=f0f0f0&dpr=1&q=70"} alt='product-img' className='productImageView'></img>

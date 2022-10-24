@@ -5,10 +5,10 @@
 }
 
 .info {
-    
+    border: 1px solid red;
     float: right;
     justify-content: left !important;
-    margin-top: -450px;
+    margin-top: -300px;
     margin-right: 200px;
 
 }
@@ -18,7 +18,7 @@
     
 }
 .Addbtn{
-    margin-top: 25px;
+    mar
 }
 
 .heading{
@@ -44,7 +44,7 @@
 
 .name{
 	font-size: 28px;
-    font-weight: 200;
+    font-weight: 500;
     color: black;
     justify-content: center;
     display: flex;
@@ -85,7 +85,7 @@
 
 .desc{
 	font-size: 28px;
-    font-weight: 200;
+    font-weight: 500;
     color: black;
     justify-content: center;
     display: flex;
@@ -104,7 +104,6 @@
     margin-right: 25px;
     margin-left: 25px;
     border-radius: 5px;
-    background-color: #F7CAC9;
     
 }
 
@@ -118,16 +117,15 @@
     margin-right: 25px;
     margin-left: 25px;
     border-radius: 5px;
-    background-color: #F7CAC9;
 }
 
 .btnAdd:hover{
-    background-color: #B76E79;
+    background-color: rgb(21, 255, 0);
     color: rgb(0, 0, 0);
 }
 
 .btnWish:hover{
-    background-color: #B76E79;
+    background-color: rgb(243, 26, 178);
     color: rgb(0, 0, 0);
 }
 
@@ -147,12 +145,12 @@
 }
 .Sizebtn{
     
-     margin-left: 110px;
+     margin-left: 355px;
     
 }
 
 .Colorbtn{
-    margin-left: 110px;
+    margin-left: 355px;
 }
 
 .btnRed{
@@ -227,13 +225,8 @@
 
 
 .productImageView{
-  
-    width: 28%;
+    margin-top: 2rem;
+    max-width: 150%;
     height: auto;
 }
 
-.line{
-    margin: -20px 150px 30px 150px ;
-    /* padding-bottom: 30px; */
-
-}

@@ -4,11 +4,10 @@ import Footer from '../../components/Footer/Footer';
 import styled from 'styled-components';
 import Header from '../../components/banner/Header';
 
-import React, { useState } from 'react'
-import Header from '../../components/banner/Header';
-import styled from 'styled-components';
+
 import "./Wishlist.css"
 import {FaShoppingCart, FaHeart} from 'react-icons/fa';
+
 
  function Wishlist() {
 
@@ -40,7 +39,6 @@ import {FaShoppingCart, FaHeart} from 'react-icons/fa';
  
    
   ])
-
   
   return (
     <div>
@@ -93,4 +91,5 @@ export default Wishlist
 const Banner = styled.div`
   background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
 `
+
 

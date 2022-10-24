@@ -1,11 +1,13 @@
-import React from 'react';
-import Nav from "././Nav/Nav";
+import Home from './screens/Landingpage/Landingpage';
+import Nav from './Nav/Nav'
 
 function App() {
   return (
+
     <>
       <Nav/>
     </>
+
   );
 }
 

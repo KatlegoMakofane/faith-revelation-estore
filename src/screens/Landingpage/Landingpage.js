@@ -5,7 +5,7 @@ import BannerComp from '../../components/banner/Banner';
 import Footer from '../../components/Footer/Footer';
 
 
-const landingpage = () => {
+const Landingpage = () => {
   return (
     
    <>
@@ -23,7 +23,7 @@ const landingpage = () => {
   )
 }
 
-export default landingpage;
+export default Landingpage;
 
 const Container = styled.div`
 

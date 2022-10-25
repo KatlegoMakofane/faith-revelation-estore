@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 import React, {useState} from 'react';
+=======
+import React,{useState} from 'react';
+>>>>>>> 20039b7df9fe241814bbccfea9b09461a611ff66
 import Footer from '../../components/Footer/Footer';
 import styled from 'styled-components';
 import Header from '../../components/banner/Header';
@@ -22,9 +26,9 @@ import {FaShoppingCart, FaHeart} from 'react-icons/fa';
     },
    {
 
-    item: 'Jacket',
-      price: 'R242.00',
-      range: 'Summer Gear',
+     item: 'Jacket',
+    price: 'R242.00',
+    range: 'Summer Gear',
     image:"https://elevationstore.fr/8454-home_default/pack-2-tee-shirts-col-rond.jpg",
     availabilty:'in stock',
   },

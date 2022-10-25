@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsFillCartFill, BsFillHeartFill } from "react-icons/bs";
 import './Profile.css';
@@ -9,6 +9,7 @@ import styled from 'styled-components';
 import Header from '../../components/banner/Header';
 import { Link } from 'react-router-dom';
 
+import { login, logout, signup, useAuth } from '../../Firebase';
 
 
 const Profile = () => {
@@ -38,9 +39,21 @@ const Profile = () => {
 	// const Logout = () => {
 	// navigate('/login');
 	//   };
-
+	const currentUser = useAuth()
+	const[loading, setLoading] = useState(false)
+  
+	async function handleLogOut(){
+	  setLoading(true)
+	  try{
+		await logout()
+	  }catch{
+		alert("Error")
+	  }
+	  setLoading(false)
+	}
 
   return (
+	
     <>
 	<Container>
     <Banner>
@@ -81,6 +94,9 @@ const Profile = () => {
 					<Route path="/cart" element={<Cart />} />
 				</Routes>
 				</div>
+				
+				 <div>Current loged in user: {currentUser?.email}</div>
+    <button disabled={loading || !currentUser}onClick={handleLogOut}>Sign out</button>
 			</div>
 			<Footer/>
 </Container>

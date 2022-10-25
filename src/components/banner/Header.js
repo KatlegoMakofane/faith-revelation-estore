@@ -1,13 +1,63 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import {GiHearts} from 'react-icons/gi';
 import {HiShoppingCart} from 'react-icons/hi';
 import {CgProfile} from 'react-icons/cg';
 import img from '../images/logo.png';
 import {Link} from 'react-router-dom';
-
+import {
+    collection,
+    getDocs,
+  } from "firebase/firestore";
+import { db } from '../config/Firebase';
+  
 const Header = () => {
     const [bar, setBar ] = useState(false);
+    const [prodList,setprodList] =useState([])
+    window.localStorage.setItem('prodList', JSON.stringify(prodList));
+    
+  useEffect(() => {
+    
+    
+    getDocs(collection(db, "inventorystock/")).then((res) => {
+      
+      res.forEach((doc) => {
+        // console.log("GET DATA: ", doc.data())
+        getDocs(collection(db, "inventorystock/", doc.id, 'colours')).then((response) => {
+          // doc.data() is never undefined for query doc snapshots
+          let coloursList = [];
+          
+          response.forEach((e) => {
+            // prodList.push(doc.data(), e.data());
+            // setProductList(prodList)
+
+            // console.log('Colours 3: ', prodList)
+
+            coloursList.push(e.data())
+            // getInventoryStock.push(
+            //   doc.id
+            // )
+            // console.log(e.id, " => ", e.data());
+            // setStock(getInventoryStock)
+
+          })
+          // console.log("GET DATA: ", doc.data())
+          
+          setprodList(item=>[...item,Object.assign(doc.data(), {coloursList: coloursList})]);
+          
+          
+          
+          console.log('Colours: ', prodList)
+        },[]);
+  
+       
+      });
+      console.log('Colours:test ', prodList)
+      setprodList(prodList)
+    
+    });
+  }, []);
+
   return (
     <Content bar={bar}>
         
@@ -27,6 +77,21 @@ const Header = () => {
                 <a href><Link to='/wishlist'><GiHearts size={20}/></Link></a>
                 <a href><Link to='/cart'><HiShoppingCart size={20}/></Link></a>
                 <a href><Link to='/profile'><CgProfile size={20}/></Link></a>
+
+                {
+                    
+              prodList.map((id )=>{
+                console.log(id.prodName)
+                  console.log("===========",id);
+                  
+                <div key={id}>
+                    <h3>{id.prodName}</h3>
+                    <img src={id.image}  alt="Product Image" style={{ width: "100%", height: "100%", margin: "auto", display: "flex", alignItems: "center", marginTop: "-18px" }} />
+                <h3>hi</h3>
+                </div>
+                
+                
+                })}
         </Nav>
         
         <div className='shadow'></div>

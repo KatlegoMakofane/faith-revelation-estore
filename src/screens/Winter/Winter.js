@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import styled from 'styled-components';
 import Header from '../../components/banner/Header';
@@ -9,6 +9,24 @@ import { WinterCard } from './WinterCard';
 
 
 const Winter = () => {
+
+  const [productInfo, setProdInfo]= useState(JSON.parse(localStorage.getItem("prodList")));
+
+  useEffect(() => {
+
+   
+      let tempArray = []
+      productInfo.map((data, inde)=>{
+        tempArray.push(data)
+      });
+  
+      const result = tempArray.filter(product =>product.brandCategory === "Winter");
+      setProdInfo(result)
+        console.log('Result'+result);
+      
+    
+  }, []);
+
   return (
     <>
 
@@ -21,15 +39,15 @@ const Winter = () => {
         </h1>
     <div className='App'>
        
-    {Wdata.map(data => (
-            <WinterCard 
-            key={data.id}
-            image={data.image}
-                        name={data.name}
-                        price={data.price}
-                        rating={data.rating}
-            />
-          ))}
+    {productInfo.map((productInfo,index)=>{
+      console.log(productInfo.prodName)
+      return(
+      <div>
+        <img src={productInfo.image}></img>
+        <h3>{productInfo.prodDescription}</h3>
+        <h3>{productInfo.prodName}</h3>
+      </div>)
+})}
           </div>
     <Footer/>
 </Container>

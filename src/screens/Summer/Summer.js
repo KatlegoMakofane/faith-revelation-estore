@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import styled from 'styled-components';
 import Header from '../../components/banner/Header';
@@ -9,6 +9,24 @@ import Sumdata from './Sumdata';
 
 
 const Summer = () => {
+
+  const [productInfo, setProdInfo]= useState(JSON.parse(localStorage.getItem("prodList")));
+
+  useEffect(() => {
+
+   
+      let tempArray = []
+      productInfo.map((data, inde)=>{
+        tempArray.push(data)
+      });
+  
+      const result = tempArray.filter(product =>product.brandCategory === "Summer");
+      setProdInfo(result)
+        console.log('Result'+result);
+      
+    
+  }, []);
+
   return (
     <>
 
@@ -21,15 +39,15 @@ const Summer = () => {
         </h1>
     <div className='App'>
        
-    {Sumdata.map(data => (
-            <SummerCard 
-            key={data.id}
-            image={data.image}
-                        name={data.name}
-                        price={data.price}
-                        rating={data.rating}
-            />
-          ))}
+    {productInfo.map((productInfo,index)=>{
+      console.log(productInfo.prodName)
+      return(
+      <div>
+        <img src={productInfo.image}></img>
+        <h3>{productInfo.prod}</h3>
+        <h3>{productInfo.prodName}</h3>
+      </div>)
+})}
           </div>
     <Footer/>
 </Container>

@@ -1,9 +1,5 @@
 
-<<<<<<< HEAD
-import React, {useState} from 'react';
-=======
 import React,{useState} from 'react';
->>>>>>> 20039b7df9fe241814bbccfea9b09461a611ff66
 import Footer from '../../components/Footer/Footer';
 import styled from 'styled-components';
 import Header from '../../components/banner/Header';

@@ -1,0 +1,130 @@
+
+.Container{
+    
+    justify-items: center;
+}
+
+.info {
+    justify-content: right;
+}
+
+.heading{
+	font-size: 50px;
+    font-weight: 700;
+    color: #B76E79;
+    justify-content: center;
+    display: flex;
+	margin-top: 10px;
+    
+}
+
+.heading2{
+	font-size: 32px;
+    font-weight: 700;
+    color: #B76E79;
+    justify-content: right;
+    display: flex;
+	margin-top: 5px;
+    margin-right: 450px;
+    
+}
+
+.name{
+	font-size: 28px;
+    font-weight: 500;
+    color: black;
+    justify-content: right;
+    display: flex;
+	margin-top: 5px;
+    margin-right: 25px;
+    
+}
+
+.heading4{
+	font-size: 32px;
+    font-weight: 700;
+    color: #B76E79;
+    justify-content: right;
+    display: flex;
+	margin-top: 5px;
+    margin-right: 500px;
+}
+.AvailS{
+    font-size: 32px;
+    font-weight: 700;
+    color: #B76E79;
+    justify-content: right;
+    display: flex;
+	margin-top: 5px;
+    margin-right: 450px;
+   
+}
+.AvailC{
+    font-size: 32px;
+    font-weight: 700;
+    color: #B76E79;
+    justify-content: right;
+    display: flex;
+	margin-top: 5px;
+    margin-right: 410px;
+   
+}
+
+.desc{
+	font-size: 28px;
+    font-weight: 500;
+    color: black;
+    justify-content: right;
+    display: flex;
+	margin-top: 5px;
+    margin-right: 10px;
+    margin-right: -85px;
+}
+.btnWish {
+ 
+    width: 200px;
+    text-align: center;
+    height: 55px;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    margin-right: 25px;
+    margin-left: 25px;
+    
+}
+
+.btnAdd {
+    width: 200px;
+    text-align: center;
+    height: 55px;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.btnAdd :hover{
+    background-color: rgb(21, 255, 0);
+    color: rgb(0, 0, 0);
+}
+
+.btnWish :hover{
+    background-color: rgb(243, 26, 26);
+    color: rgb(0, 0, 0);
+}
+
+.btnSize{
+    width: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align: center;
+    height: 35px;
+    background-color: transparent;
+}
+
+.b
+.Sizebtn{
+  
+    margin-left: 955px;
+}

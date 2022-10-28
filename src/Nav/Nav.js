@@ -1,5 +1,4 @@
-import React,{useState} from 'react';
-
+import React from 'react';
 import { BrowserRouter as Router,
   Routes,
   Route
@@ -21,7 +20,6 @@ import ProductView from '../screens/Product-view/Productview';
 import Signin from '../screens/Signin/Signin';
 
 function App() {
- 
   return (
     <>
       <Router>
@@ -37,13 +35,13 @@ function App() {
           <Route path='/wishlist' element={<Wishlist/>} />
           <Route path='/profile' element={<Profile/>} />
           <Route path='/productView' element={<ProductView/>} />
+
           <Route path='/signin' element={<Signin/>} />
      
+
         </Routes>
       </Router>
-     
     </>
-    
   );
 }
 

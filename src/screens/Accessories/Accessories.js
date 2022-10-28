@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Header from '../../components/banner/Header';
 import { ACard } from './Acard';
 import Adata from './Adata';
-import { Grid } from '@mui/material';
+
 
 
 
@@ -21,7 +21,7 @@ const Accessories = () => {
     Accessories
         </h1>
     <div >
-    <Grid container spacing={2} marginTop={2} marginLeft={15} marginRight={3} >
+       
     {Adata.map(data => (
             <ACard 
             key={data.id}
@@ -31,7 +31,6 @@ const Accessories = () => {
                         rating={data.rating}
             />
           ))}
-          </Grid>
           </div>
     <Footer/>
 </Container>

@@ -5,7 +5,7 @@ import { BrowserRouter as Router,
     
     } from "react-router-dom"
 import {useState, useRef} from 'react'
-import { login, logout, signup, useAuth } from '../../Firebase';
+import { login, logout, signup, useAuth } from '../../components/config/Firebase';
 import Landingpage from '../../screens/Landingpage/Landingpage';
 const   Signin=() =>{
 

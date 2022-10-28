@@ -1,10 +1,11 @@
+
 import Home from '../src/screens/Landingpage/Landingpage';
 import Nav from '../src/Nav/Nav'
 
 import {useState, useRef} from 'react'
 import { async } from '@firebase/util';
 import Signin from './screens/Signin/Signin';
-import { login, logout, signup, useAuth } from '../src/Firebase';
+import { useAuth } from '../src/components/config/Firebase';
 import Landingpage from '../src/screens/Landingpage/Landingpage';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 
       {currentUser && 
       
+
     <>
     
    
@@ -30,9 +32,11 @@ function App() {
    
       
 
+
     </>
 }
     </div>
+
   );
 }
 

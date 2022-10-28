@@ -12,7 +12,7 @@ const ProfileComp = () =>{
             <Texts>
                 <h4>Hello <span className='#F8AFA6' >We are</span></h4>
                 <h1 className='#F8AFA6'>Revelation</h1>
-                <Link to='/about'>Know More About Us</Link>
+                <Link to='/about'><button>Know More About Us</button></Link>
                 <Social>
                     <p>Follow us On</p>
                     <div className='social-icons'>

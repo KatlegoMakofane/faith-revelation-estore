@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import Tabs from '../../components/Tabs/Tabs';
 import BannerComp from '../../components/banner/Banner';
 import Footer from '../../components/Footer/Footer';
-import { login, logout, signup, useAuth } from '../../Firebase';
-
+import {  logout,  useAuth } from '../../components/config/Firebase';
 
 const Landingpage = () => {
   const currentUser = useAuth()

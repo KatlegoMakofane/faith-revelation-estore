@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import Header from '../../components/banner/Header';
 import { SummerCard } from './SummerCard';
 import Sumdata from './Sumdata';
-import { Grid } from '@mui/material';
 
 
 
@@ -38,23 +37,25 @@ const Summer = () => {
     <h1>
             Summer
         </h1>
-    <div >
-    <Grid container spacing={2} marginTop={2} marginLeft={15} marginRight={3} >
-    {Sumdata.map(data => (
-            <SummerCard 
-            key={data.id}
-            image={data.image}
-                        name={data.name}
-                        price={data.price}
-                        rating={data.rating}
-            />
-          ))}
-          </Grid>
+    <div className='App'>
+       
+    {productInfo.map((productInfo,index)=>{
+      console.log(productInfo.prodName)
+      return(
+      <div>
+        <img src={productInfo.image}></img>
+        <h3>{productInfo.prod}</h3>
+        <h3>{productInfo.prodName}</h3>
+      </div>)
+})}
           </div>
     <Footer/>
 </Container>
 
-
+     <Banner>
+        <Header/>
+    </Banner>
+      <h1>Summer</h1>
 
     </>
   )

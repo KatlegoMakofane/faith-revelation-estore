@@ -1,0 +1,28 @@
+
+.Container{
+    
+    justify-items: center;
+}
+
+
+.heading{
+	font-size: 50px;
+    font-weight: 700;
+    color: #B76E79;
+    justify-content: center;
+    display: flex;
+	margin-top: 10px;
+}
+
+.heading2{
+	font-size: 32px;
+    font-weight: 700;
+    color: #B76E79;
+    justify-content: left;
+    display: flex;
+	margin-top: 10px;
+}
+
+
+
+

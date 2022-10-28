@@ -1,5 +1,7 @@
 
+
 import React,{useState} from 'react';
+
 import Footer from '../../components/Footer/Footer';
 import styled from 'styled-components';
 import Header from '../../components/banner/Header';
@@ -80,7 +82,7 @@ import {FaShoppingCart, FaHeart} from 'react-icons/fa';
                 
                       )
                     })}
-                  </tbody>
+                  </tbody> 
                 </table>
                 
           

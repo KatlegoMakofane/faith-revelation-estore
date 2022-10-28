@@ -13,9 +13,7 @@ function Tabs() {
     const toggleTab = (index) => {
       setToggleState(index);
     };
-
    
-    
   return (
       <div className="container">
         <div className="bloc-tabs">

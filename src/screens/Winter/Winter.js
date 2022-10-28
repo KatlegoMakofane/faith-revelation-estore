@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import Header from '../../components/banner/Header';
 import Wdata from './Wdata';
 import { WinterCard } from './WinterCard';
-import { Grid } from '@mui/material';
 
 
 
@@ -38,18 +37,17 @@ const Winter = () => {
     <h1>
             Winter
         </h1>
-    <div>
-    <Grid container spacing={2} marginTop={2} marginLeft={15} marginRight={3} >
-    {Wdata.map(data => (
-            <WinterCard 
-            key={data.id}
-            image={data.image}
-                        name={data.name}
-                        price={data.price}
-                        rating={data.rating}
-            />
-          ))}
-                </Grid>
+    <div className='App'>
+       
+    {productInfo.map((productInfo,index)=>{
+      console.log(productInfo.prodName)
+      return(
+      <div>
+        <img src={productInfo.image}></img>
+        <h3>{productInfo.prodDescription}</h3>
+        <h3>{productInfo.prodName}</h3>
+      </div>)
+})}
           </div>
     <Footer/>
 </Container>

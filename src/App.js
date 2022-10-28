@@ -1,24 +1,13 @@
-import Home from '../src/screens/Landingpage/Landingpage';
-import Nav from '../src/Nav/Nav'
-
-import {useState, useRef} from 'react'
-
-
-
+import Home from './screens/Landingpage/Landingpage';
+import Nav from './Nav/Nav'
 
 function App() {
-
- 
- 
   return (
-    <div >
-  
-      
+
     <>
       <Nav/>
     </>
 
-    </div>
   );
 }
 

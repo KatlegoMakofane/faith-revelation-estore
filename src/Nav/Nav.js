@@ -1,5 +1,4 @@
-import React,{useState} from 'react';
-
+import React from 'react';
 import { BrowserRouter as Router,
   Routes,
   Route
@@ -20,7 +19,6 @@ import Profile from '../screens/Profile/Profile';
 import ProductView from '../screens/Product-view/Productview';
 
 function App() {
- 
   return (
     <>
       <Router>
@@ -37,12 +35,10 @@ function App() {
           <Route path='/profile' element={<Profile/>} />
           <Route path='/productView' element={<ProductView/>} />
 
-     
+
         </Routes>
       </Router>
-     
     </>
-    
   );
 }
 

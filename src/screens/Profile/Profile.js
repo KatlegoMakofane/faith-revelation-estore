@@ -95,8 +95,7 @@ const Profile = () => {
 				</Routes>
 				</div>
 				
-				 <div>Current loged in user: {currentUser?.email}</div>
-    <button disabled={loading || !currentUser}onClick={handleLogOut}>Sign out</button>
+				
 			</div>
 			<Footer/>
 </Container>

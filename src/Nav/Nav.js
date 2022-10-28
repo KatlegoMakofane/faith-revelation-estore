@@ -19,6 +19,7 @@ import Wishlist from '../screens/Wishlist/Wishlist';
 import Login from '../screens/Login/Login';
 import Profile from '../screens/Profile/Profile';
 import ProductView from '../screens/Product-view/Productview';
+import Signin from '../screens/Signin/Signin';
 
 function App() {
  
@@ -37,7 +38,7 @@ function App() {
           <Route path='/wishlist' element={<Wishlist/>} />
           <Route path='/profile' element={<Profile/>} />
           <Route path='/productView' element={<ProductView/>} />
-
+          <Route path='/signin' element={<Signin/>} />
      
         </Routes>
       </Router>

@@ -1,22 +1,40 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styled from 'styled-components';
 import Tabs from '../../components/Tabs/Tabs';
 import BannerComp from '../../components/banner/Banner';
 import Footer from '../../components/Footer/Footer';
+import { login, logout, signup, useAuth } from '../../Firebase';
 
 
 const Landingpage = () => {
+  const currentUser = useAuth()
+	const[loading, setLoading] = useState(false)
+  
+	async function handleLogOut(){
+	  setLoading(true)
+	  try{
+		await logout()
+	  }catch{
+		alert("Error")
+	  }
+	  setLoading(false)
+	}
+
   return (
     
    <>
    
+  
     <Container>
     <div className='fix'>
     <Banner>
         <BannerComp/>
     </Banner>
     </div>
+    <div>Current loged in user: {currentUser?.email}</div>
+    <button disabled={loading || !currentUser}onClick={handleLogOut}>Sign out</button>
     <Tabs/>
+
     <Footer/>
 </Container>
 </>

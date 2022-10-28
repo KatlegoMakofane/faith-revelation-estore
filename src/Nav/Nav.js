@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import { login, logout, signup, useAuth } from '../Firebase';
 
 import { BrowserRouter as Router,
   Routes,

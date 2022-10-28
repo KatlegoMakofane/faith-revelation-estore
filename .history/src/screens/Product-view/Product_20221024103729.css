@@ -1,0 +1,81 @@
+
+.Container{
+    
+    justify-items: center;
+}
+
+
+.heading{
+	font-size: 50px;
+    font-weight: 700;
+    color: #B76E79;
+    justify-content: center;
+    display: flex;
+	margin-top: 10px;
+}
+
+.heading2{
+	font-size: 32px;
+    font-weight: 700;
+    color: #B76E79;
+    justify-content: right;
+    display: flex;
+	margin-top: 5px;
+    margin-right: 250px;
+}
+
+.name{
+	font-size: 28px;
+    font-weight: 500;
+    color: black;
+    justify-content: right;
+    display: flex;
+	margin-top: 5px;
+    margin-right: 10px;
+}
+
+.heading4{
+	font-size: 32px;
+    font-weight: 700;
+    color: #B76E79;
+    justify-content: right;
+    display: flex;
+	margin-top: 5px;
+    margin-right: 270px;
+}
+
+.desc{
+	font-size: 28px;
+    font-weight: 500;
+    color: black;
+    justify-content: right;
+    display: flex;
+	margin-top: 5px;
+    margin-right: 10px;
+}
+.btnWish {
+ 
+    width: 200px;
+    text-align: center;
+    height: 55px;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    margin-right: 25px;
+    margin-left: 25px;
+    
+}
+
+.btnAdd {
+    width: 200px;
+    text-align: center;
+    height: 55px;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+
+

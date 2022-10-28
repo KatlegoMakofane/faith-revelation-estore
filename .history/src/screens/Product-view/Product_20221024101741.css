@@ -1,0 +1,17 @@
+
+.Container{
+    justify-content: center;
+}
+
+
+.h1{
+	font-size: 60px;
+    font-weight: 700;
+    color: #B76E79;
+    justify-content: center;
+    display: flex;
+	margin-top: 80px;
+}
+
+
+

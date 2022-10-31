@@ -41,15 +41,15 @@ const Winter = () => {
         </h1>
     <div className='App'>
        
-    {productInfo.map((productInfo,index)=>{
+    {productInfo.map((productInfo,id)=>{
       console.log(productInfo.prodName)
       return(
-      <div className='wintercard' key={index}>
+      <div className='wintercard' key={id}>
         <img src={productInfo.image}/>
         <h3>{productInfo.prodName}</h3>
-        <h3>R{productInfo.coloursList[index].price}</h3>
+        {/* <h3>R{productInfo.coloursList[id].price}</h3> */}
          
-        <button ><Link to="/Productview">ViewProduct</Link></button>
+        <button  ><Link to="/Productview">ViewProduct</Link></button>
        
       </div>)
 })}

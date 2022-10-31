@@ -4,8 +4,9 @@ import Sdata from '../Sales/Sdata';
 import {TbBackspace} from 'react-icons/tb'
 import './Product.css'
 
-const productview = () => {
+const Productview = () => {
 
+  const [productInfo, setProdInfo]= useState(JSON.parse(localStorage.getItem("prodList")));
   // const {id} = useParams()
   //   const [item, setItem] = useState(null)
 
@@ -17,7 +18,20 @@ const productview = () => {
   //       }
 
   //   }, [id] )
+  useEffect(() => {
 
+   
+    let tempArray = []
+    productInfo.map((data, inde)=>{
+      tempArray.push(data)
+    });
+
+    const result = tempArray.filter(product =>product.brandCategory === "Winter");
+    setProdInfo(result)
+      console.log('Result'+result);
+    
+  
+}, []);
 
   return (
     <>
@@ -39,9 +53,26 @@ const productview = () => {
             
                
         </div>
+        <div className='App'>
+       
+       {productInfo.map((productInfo,id)=>{
+         console.log(productInfo.prodName)
+         return(
+         <div className='wintercard' key={id}>
+           <img src={productInfo.image}/>
+           <h3>{productInfo.prodName}</h3>
+           <h3>{productInfo.prodDescription}</h3>
+           <h3></h3>
+           <h3>Product Code{productInfo.productCode}</h3>
+            
+           <button  ><Link to="/Productview">ViewProduct</Link></button>
+          
+         </div>)
+   })}
+             </div>
       
     </>
   )
 }
 
-export default productview
+export default Productview
